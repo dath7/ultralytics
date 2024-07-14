@@ -288,6 +288,7 @@ class Exporter:
             "imgsz": self.imgsz,
             "names": model.names,
         }  # model metadata
+        print(self.metadata)
         if model.task == "pose":
             self.metadata["kpt_shape"] = model.model[-1].kpt_shape
 
